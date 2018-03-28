@@ -9,5 +9,6 @@ mysql-python
 pbr
 pre-commit
 pycrypto
+python-ldap
 requests
 six

@@ -49,6 +49,13 @@ DATABASE_NAME = 'modern_paste'
 DATABASE_USER = 'modern_paste'
 DATABASE_PASSWORD = 'U4bV96S7uchYnJv4WK4akKfzdqKhDFLOpfm0XspYkTF7gyJawhmpZnBi1KdAQNPqxqoUbNDZzuxX0LOgyMc2g8B2NS2j2Fib'
 
+ENABLE_LDAP_AUTH = False
+LDAP_PROVIDER_URL = "ldap://HOSTNAME:389"
+LDAP_PROTOCOL_VERSION = 3
+LDAP_ACCOUNT_SUFFIX = "@DOMAIN"
+LDAP_SEARCH_BASE = "OU=SOMEOU,DC=BASE,DC=DOMAIN"
+LDAP_USER_FILTER = "(SAMAccountName=%s)"
+
 # Choose to enable or disable user registration
 # If False, the web interface will not allow access to the user registration page. Additionally, the API endpoint
 # for creating new users will respond with an error.
